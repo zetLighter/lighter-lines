@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+}
+.header {
+    width: 100%;
+    height: 65px;
+    background: #466E9C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-bar {
+    display: flex;
+    margin-left: auto;
+}
+.auth-link {
+    border: 3px solid #c5d4e6;
+    height: 41px; 
+
+    border-radius: 30px;
+    padding: 0px 8px 2px 8px;
+    margin: 0 20px 0 0;
+
+    font-weight: 600;
+    line-height: 37px;
+    color: #c5d4e6;
+
+    transition: all 0.25s ease-in;
+}
+.auth-link:hover {
+    cursor: pointer;
+}
+.cart-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.header-cart {
+    width: 40px;
+    transition: width 0.25s ease-in;
+}
+.header-cart:hover {
+    cursor: pointer;
+}
+.cart-counter {
+    margin: 0;
+    color: #c5d4e6;
+    font-weight: 700;
+    font-size: 14px;
+}
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.header a {
+    text-decoration: none;
+    color: #c5d4e6;
+}
+.header a:hover {
+    color: #e9eef5;
+}
+.header-title {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-subtitle {
+    text-decoration: underline;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.15em;
+
+}
+.main {
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    padding: 60px 0 90px 0;
+}
+.container {
+    max-width: 1150px;
+    margin: 0 auto 0 auto;
+    padding: 15px;
+}
+.shadow {
+    box-shadow: 10px 20px 40px rgba(126, 155, 189, 0.35);
+}
+.cart-title {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 40px;
+    padding:10px 20px 10px 20px;
+    min-width: 700px;
+    max-width: 900px;
+
+    border: 3px solid black;
+    border-radius: 3px;
+
+    transition: all 0.25s ease-in;
+}
+.card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+    background-color: #84a2c4;
+}
+.card:last-child {
+    margin-bottom: 0;
+}
+.card-title {
+    margin: 0;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 0 10px;
+}
+.card-date-time {
+    margin: 0;
+    line-height: 130%;
+    padding: 0 10px;
+}
+.card-time {
+    margin: 0;
+    font-weight: 400;
+}
+.card-date {
+    margin: 0;
+    font-weight: 400;
+}
+.card-price {
+    margin: 0;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 0 10px;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 67px;
+    background-color: #466E9C;
+    color: white;
+}
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-copyright {
+    color: #a3bbd6;
+    line-height: 1.3;
+}
+.footer-copyright-title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.footer-copyright p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.footer-links {
+}
+.footer-links p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+}
+.footer-links-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+.footer-links-row > * + *{
+    margin-left: 30px;
+}
+.footer-links-row a {
+    transition: all 0.25s ease-in;
+}
+.footer-links-row a:hover {
+    background-color: white;
+    padding: 6px;
+    border-radius: 50px;
+}
+.footer-links-row img {
+    margin: 0;
+    width: 30px;
+}
+.footer-contact {
+    
+}
+.footer p {
+    margin: 16px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+}
+.footer-button {
+    display: inline-block;
+    height: 50px;
+    padding: 0px 30px 16px 30px;
+
+    border: 3px solid white;
+    border-radius: 50px;
+
+    color: white;
+    text-decoration: none;
+    line-height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+
+    transition: all 0.25s ease-in;
+}
+.footer-button:hover {
+    color: #466E9C;
+    background-color: white;
+}
+.footer-column {
+    max-width: 350px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.none {
+    display: none;
+}

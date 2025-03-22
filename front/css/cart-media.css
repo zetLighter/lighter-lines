@@ -1,0 +1,14 @@
+
+@media (max-width: 1084px) {
+    .footer-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        margin-bottom: 45px;
+    }
+    .footer-column:first-child {
+        margin: 0;
+    }
+}

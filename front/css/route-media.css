@@ -1,0 +1,24 @@
+
+@media (max-width: 1150px) {
+    .container-image {
+        max-width: 900px;
+    }
+    .container-description {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .footer-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        margin-bottom: 45px;
+    }
+    .footer-column:first-child {
+        margin: 0;
+    }
+}
+

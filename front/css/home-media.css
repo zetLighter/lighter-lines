@@ -1,0 +1,76 @@
+
+
+
+@media (max-width: 1114px) {
+    .card-container {
+        justify-content: center;
+    }
+    
+    .header-title {
+        font-size: 18px;
+    }
+    .header-subtitle {
+        font-size: 9px;
+    }
+    .card:nth-last-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .container-title {
+        margin-bottom: 30px;
+        font-size: 34px;
+    }
+    .container-image {
+        margin-bottom: 40px;
+        max-width: 900px;
+    }
+    .container-description {
+        font-size: 16px;
+        margin-bottom: 45px;
+        max-width: 900px;
+    }
+}
+/* For footer only*/
+@media (max-width: 1084px) {
+    .footer-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        margin-bottom: 45px;
+    }
+    .footer-column:first-child {
+        margin: 0;
+    }
+}
+@media (max-width: 542px) {
+    .card-link {
+        flex-direction: column;
+        padding: 12px;
+    }
+    .card-image {
+        max-width: 300px;
+    }
+    .title-desc {
+        padding: 10px 0 0 0;
+        max-width: 300px;
+    }
+
+    .header-title {
+        font-size: 16px;
+    }
+    .header-subtitle {
+        font-size: 8px;
+    }
+
+    .container-title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .container-image {
+        margin-bottom: 30px;
+    }
+
+}
+
