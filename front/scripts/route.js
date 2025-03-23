@@ -54,14 +54,14 @@ async function loginOrExitDisplay() {
 function toLoginOrExit(event) {
     const elementClassList = event.target.classList;
     if (elementClassList.contains('login')) {
-        window.location.replace('http://localhost:5500/front/html/login.html')
+        window.location.replace('/login')
     } else if (elementClassList.contains('exit')) {
         localStorage.removeItem('token');
-        window.location.replace('http://localhost:5500/front/html/home.html');
+        window.location.replace('/');
     }
 }
 function toCartPage () {
-    window.location.replace('http://localhost:5500/front/html/cart.html');
+    window.location.replace('/cart');
 }
 async function updateCartCounter() {
     const cartRoutes = await fetchCartRoutes();
@@ -107,7 +107,7 @@ function createCard () {
     const {id, from, to, price, imageName, fullDescription} = currentRouteData;
     const components = `
     <h2 class="container-title">${from} - ${to}</h2>
-    <img class="container-image" src="../../database/static/${imageName}">
+    <img class="container-image" src="../static/${imageName}">
     <p class="container-description">${fullDescription}</p>`
     cardComponents.insertAdjacentHTML('afterbegin', components);
 }

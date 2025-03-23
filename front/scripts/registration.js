@@ -34,13 +34,13 @@ async function registerFetch(email, username, password) {
     if (response.ok) {
         errorBoard.textContent = '';
         setToken(tokenObject.token);
-        window.location.replace('http://localhost:5500/front/html/home.html')
+        window.location.replace('/')
     } else {
         errorBoard.textContent = tokenObject.message;
     }
 }
 function toLogin() {
-    window.location.replace('http://localhost:5500/front/html/login.html');
+    window.location.replace('/login');
 }
 function setToken(token) {
     localStorage.setItem('token', JSON.stringify(token));

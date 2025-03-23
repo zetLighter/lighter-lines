@@ -142,15 +142,15 @@ async function removeFromCart(event) {
     getDetailedRoutes();
 }
 function toCartPage () {
-    window.location.replace('http://localhost:5500/front/html/cart.html');
+    window.location.replace('/cart');
 }
 function toLoginOrExit(event) {
     const elementClassList = event.target.classList;
     if (elementClassList.contains('login')) {
-        window.location.replace('http://localhost:5500/front/html/login.html')
+        window.location.replace('/login')
     } else if (elementClassList.contains('exit')) {
         localStorage.removeItem('token');
-        window.location.replace('http://localhost:5500/front/html/home.html');
+        window.location.replace('/');
     }
 }
 

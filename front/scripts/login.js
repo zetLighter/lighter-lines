@@ -33,14 +33,14 @@ async function loginFetch(loginValue, passwordValue) {
     if (response.ok) {
         errorBoard.textContent = '';
         setToken(tokenObject.token);
-        window.location.replace('http://localhost:5500/front/html/home.html');
+        window.location.replace('/');
     } else {
         errorBoard.textContent = tokenObject.message;
         console.log(tokenObject.message);
     }
 }
 function toRegister() {
-    window.location.replace('http://localhost:5500/front/html/registration.html');
+    window.location.replace('/registration');
 }
 function setToken(token) {
     localStorage.setItem('token', JSON.stringify(token));

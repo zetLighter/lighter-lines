@@ -88,7 +88,7 @@ function createCards(cardsArray) {
         const cardElement = `
             <div class="card shadow" data-route-id=${id}> 
                 <div class="card-link">
-                    <img class="card-image" src="../../database/static/${imageName}">
+                    <img class="card-image" src="../static/${imageName}">
                     <div class="title-desc">
                         <h3 class="card-title">${from} - ${to}</h3>
                         <p class="card-desc">${shortDescription}</p>
@@ -105,20 +105,20 @@ async function updateCartCounter() {
     cartCounter.textContent = cartRoutes.length;
 }
 function toCartPage () {
-    window.location.replace('http://localhost:5500/front/html/cart.html');
+    window.location.replace('/cart');
 }
 function toLoginOrExit(event) {
     const elementClassList = event.target.classList;
     if (elementClassList.contains('login')) {
-        window.location.replace('http://localhost:5500/front/html/login.html')
+        window.location.replace('/login')
     } else if (elementClassList.contains('exit')) {
         localStorage.removeItem('token');
-        window.location.replace('http://localhost:5500/front/html/home.html');
+        window.location.replace('/');
     }
 }
 function toRoutePage (event) {
     const routeId = event.target.closest('.card').getAttribute('data-route-id');
-    window.location.replace(`http://localhost:5500/front/html/route.html?id=${routeId}`)
+    window.location.replace(`/route?id=${routeId}`)
 }
 
 async function fetchCartRoutes() {
