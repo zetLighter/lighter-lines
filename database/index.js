@@ -10,9 +10,14 @@ const path = require('path');
 const models = require('./model/models');
 const cors = require('cors');
 
+const os = require('os');
+const hostname = os.hostname();
+
 // ads of constants
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 const expressApp = express();
+
+expressApp.get('/', (request, response) => response.send("Current host: " + hostname));
 
 // workspace
 expressApp.use(cors());
@@ -21,7 +26,6 @@ expressApp.use(express.static(path.resolve(__dirname, 'static')));
 expressApp.use(fileUpload({}));
 expressApp.use('/api', commonRouter);
 expressApp.use(errorHandlerMiddleware);
-
 
 const start = async () => {
     try {
