@@ -24,7 +24,7 @@ expressApp.use(cors());
 expressApp.use(express.json())
 expressApp.use(express.static(path.resolve(__dirname, 'static')));
 expressApp.use(fileUpload({}));
-expressApp.use('/api', commonRouter);
+expressApp.use('/', commonRouter);
 expressApp.use(errorHandlerMiddleware);
 
 const start = async () => {
