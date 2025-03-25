@@ -17,6 +17,9 @@ services:
   database:
     build:
       context: ./database
+    volumes: 
+      - .:/usr/app
+      - /usr/app/node_modules
     networks: 
       - dev
   front:
