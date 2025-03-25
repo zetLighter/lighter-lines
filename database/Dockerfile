@@ -1,4 +1,4 @@
-from node:alpine-slim
+from node:alpine
 
 copy package.json package.json
 

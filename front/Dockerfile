@@ -1,4 +1,4 @@
-from node:alpine-slim as front
+from node:alpine as front
 
 copy . .
 
